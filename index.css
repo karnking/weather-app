@@ -1,0 +1,189 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+        body {
+            background-color: #f2f2f2;
+            font-family: 'Roboto',sans-serif;
+        }
+        .head{
+            display: flex;
+            align-items: center;
+        }
+        .nav{
+            padding: 3% 6%;
+            display: flex;
+            width: 50%;
+        }
+        .nav .city-name {
+            font-size: 17px;
+            width: 75%;
+            padding: 12px;
+            border-radius: 7px 0px 0px 7px;
+            border: 1.5px solid #48484a;
+        }
+        .search {
+            padding: 10px 30px;
+            color: white;
+            font-size: 18px;
+            border-radius: 0px 8px 8px 0;
+            background-color: #48484a;
+        }
+        .help{
+            display: flex;
+            align-items: center;
+            padding: 1%;
+            width: 50%;
+        }
+        .help>img{
+            width: 4%;
+            margin-right: 4%;
+        }
+        .help>button{
+            cursor: pointer;
+            padding: 9px 15px;
+            border: none;
+            font-size: 15px;
+            margin-right: 15px;
+            border-radius: 6px;
+            background-color: rgb(236 236 237)
+        }
+        .help>div{
+            background-color: rgb(236 236 237);
+            padding: 7px 18px 7px 0px;
+            cursor: pointer;
+            border-radius: 6px 0 0 6px;
+        }
+        .help>div.checked{
+            background-color: white;
+        }
+        .help>div:last-child{
+            border-radius: 0 6px 6px 0;
+            padding-right: 15px;
+        }
+        .help>div>input{
+            opacity: 0;
+            z-index: 10;
+        }
+        .root {
+            width: 90%;
+            margin: auto;
+            padding: 3%;
+            justify-content: space-around;
+            display: none;
+            gap: 0%;
+            background-color: white;
+        }
+
+        .root>.data {
+            background-color: white;
+            width: 40%;
+            padding: 3.5% 5%;
+            color: #3c3c3c;
+        }
+        .root>.map {
+            width: 60%;
+        }
+
+        .root>.map>div {
+            position: relative;
+            text-align: right;
+            width: 100%;
+            height: 100%;
+        }
+        .root>.map>div>div {
+            overflow: hidden;
+            background: none !important;
+            width: 100%;
+            height: 100%;
+        }
+        .root>.map>div>div>iframe {
+            width: 100%;
+            height: 100%;
+        }
+        .root>.data>.time{
+            color: rgb(236 119 88);
+            font-size: 1.4em;
+            margin: 0;
+        }
+        .root>.data>.time+h2{
+            font-size: 2.5em;
+            font-weight: bolder;
+            margin: 0;
+            margin-bottom: 1.05em;
+        }
+        .root>.data>.temp-div{
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.8em;
+        }
+        .root>.data>.temp-div>img{
+            width: 15%;
+            height: 18%;
+            margin-left: -15px;
+        }
+        .root>.data>.temp-div>h2{
+            font-size: 3.6em;
+            font-weight: 500;
+            margin: 0;
+            margin-left: 15px;
+        }
+        .root>.data>.feels{
+            margin: 0;
+        }
+        .root>.data>.data-div{
+            color: .5e5e5f;
+            display: flex;
+            margin-top: 10px;
+            border-left: 2px solid red;
+            padding-left: 10px;
+            justify-content: space-around;
+        }
+        .root>.data>.data-div>.left-div,.root>.data>.data-div>.right-div{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 40%;
+        }
+        .root>.data>.data-div>.left-div p,.root>.data>.data-div>.right-div p{
+            margin: 0;
+            font-size: 19px;
+        }
+        .root>.data>.data-div>.left-div>.direction-div,.root>.data>.data-div>.right-div>.pressure-div{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin: 0;
+        }
+        .root>.data>.data-div>.left-div>.direction-div>img{
+            width: 22px;
+            height: 20px;
+        }
+        .root>.data>.data-div>.right-div>.pressure-div>img{
+            width: 10.5%;
+        }
+        .down{
+            background-color: white;
+            width: 86%;
+            margin: auto;
+            padding: 5%;
+            padding-top: 1%;
+            display: none;
+            gap: 10px;
+            grid-template-columns: repeat(8,1fr);
+        }
+        .down>div{
+            border: 1px solid rgb(207, 207, 207);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 15px;
+            padding: 10px 2px;
+        }
+        .down>div>img{
+            width: 60%;
+        }
+        .down>div>h2{
+            margin: 0;
+        }
+        .down>div>h2:last-child{
+            margin-top: 5%;
+            font-weight: 500;
+        }
